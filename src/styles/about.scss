@@ -1,0 +1,73 @@
+.about {
+  height: 500px;
+  position: relative;
+  &__content {
+    max-width: 1272px;
+    width: 100%;
+    background: url("../assets/images/contentBg.png") center/cover no-repeat;
+    padding: 71px 99px 71px 70px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  &__row {
+    display: flex;
+    align-items: center;
+    column-gap: 160px;
+  }
+  &__info {
+    width: 50%;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 32px;
+    text-transform: uppercase;
+  }
+  &__desc {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 25px;
+    color: #CFCFCF;
+    margin: 26px 0 60px;
+  }
+  &__btn {
+    padding: 21px 40px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(2.5px);
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 13px;
+  }
+  &__cards {
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px ;
+  }
+  &__card {
+    width: calc(50% - 7.5px);
+    padding: 70px 37px 40px;
+    background: rgba(80, 75, 74, 0.9);
+    backdrop-filter: blur(2px);
+    text-align: center;
+    transition: .5s all;
+    &-title {
+      font-weight: 400;
+      font-size: 18px;
+      margin-top: 31px;
+    }
+    &:hover {
+      background: #504B4A;
+      box-shadow: 0 40px 50px rgba(0, 0, 0, 0.4);
+      h3 {
+        color: #79B282;
+      }
+      svg path {
+        fill: #79B282;;
+      }
+    }
+  }
+
+}

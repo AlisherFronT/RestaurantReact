@@ -1,0 +1,36 @@
+.footer {
+  background: linear-gradient(270.7deg, #44403F 0.4%, #211F20 100%);
+  padding: 26px 40px;
+  &__nav {
+    display: flex;
+    align-items: center;
+    column-gap: 60px;
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+  }
+  &__copy{
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+    color: #CFCFCF;
+    margin-top: 15px;
+  }
+  &__doc{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: underline;
+  }
+  &__menu {
+    display: flex;
+    column-gap: 30px;
+  }
+  &__link {
+    font-weight: 500;
+    font-size: 20px;
+  }
+
+
+}

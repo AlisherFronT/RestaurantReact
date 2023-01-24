@@ -1,0 +1,45 @@
+.delivery{
+  &__block{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    row-gap: 10px;
+    flex-direction: column;
+
+  }
+
+  &__card{
+    width: 100%;
+
+    border-radius: 10px;
+    background: #618967;
+
+    &-title{
+      display: flex;
+      justify-content: space-between;
+      padding: 16px;
+
+    }
+  }
+  &__text{
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    display: none;
+    padding: 40px;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 25px;
+    color: #FFFFFF;
+    border-radius:0 0 10px 10px;
+  }
+  &__cards{
+    display: flex;
+    column-gap: 20px;
+    align-items: center;
+  }
+  &__map{
+    background: url("../assets/images/maps.png") center/cover no-repeat;
+    width: calc(50% - 10px);
+    height: 400px;
+  }
+
+}

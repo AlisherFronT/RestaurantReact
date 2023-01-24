@@ -1,0 +1,28 @@
+.catalog{
+  padding: 40px 0 ;
+  &__content{
+    display: flex;
+    column-gap: 20px;
+  }
+  &__aside{
+    width: 100%;
+    max-width: 250px;
+    height: 100vh;
+    background: white;
+  }
+  &__right{
+    width: calc(100% - 250px);
+  }
+  &__crumbs{
+    margin-bottom: 20px;
+  }
+  &__row{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    .products__card{
+      width: calc(33.33333% - 20px);
+    }
+  }
+}

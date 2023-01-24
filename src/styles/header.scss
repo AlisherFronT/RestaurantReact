@@ -1,0 +1,102 @@
+.header {
+  padding: 24px 0;
+  border-bottom: 1px solid #ffffff10;
+  &__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__right {
+    display: flex;
+    align-items: center;
+    column-gap: 72px;
+  }
+  &__content {
+    display: flex;
+    align-items: center;
+    column-gap: 30px;
+  }
+  &__title {
+    font-size: 25px;
+    letter-spacing: 0.15em;
+  }
+  &__search {
+    width: 555px;
+    position: relative;
+    &-input {
+      width: 100%;
+      background: #504B4A;
+      border-radius: 10px;
+      height: 52px;
+      border: none;
+      padding: 0 48px;
+      outline: none;
+      &::placeholder {
+        font-weight: 400;
+        font-size: 18px;
+        color: #CFCFCF;
+      }
+    }
+    &-map {
+      position: absolute;
+      top: 50%;
+      left: 18px;
+      transform: translateY(-50%);
+    }
+    &-icon {
+      position: absolute;
+      top: 50%;
+      right: 18px;
+      transform: translateY(-50%);
+    }
+  }
+  &__contact {
+    display: flex;
+    column-gap: 10px;
+    align-items: center;
+    &-icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+      border-radius: 50%;
+    }
+    &-text {
+      font-weight: 400;
+      color: #CFCFCF;
+    }
+  }
+  &__btn {
+    padding: 14px 13px 14px 24px;
+    background: linear-gradient(114.93deg, #618967 5.11%, #72A479 94%);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+    border: none;
+    cursor: pointer;
+    &-count {
+      width: 24px;
+      height: 24px;
+      background: #fff;
+      border-radius: 50%;
+      padding: 5px 9px;
+      font-weight: 600;
+      font-size: 12px;
+      line-height: 14px;
+      color: #403C3B;
+      position: relative;
+      &::before {
+        content: '';
+        width: 2px;
+        height: 38px;
+        background: #ffffff30;
+        position: absolute;
+        top: -7px;
+        left: -12px;
+      }
+    }
+  }
+}
