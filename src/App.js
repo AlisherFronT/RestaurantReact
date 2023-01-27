@@ -10,8 +10,7 @@ import Delivery from "./pages/Delivery/Delivery";
 import Catalog from "./pages/Catalog/Catalog";
 import Product from "./pages/Product/Product";
 import AddProduct from "./pages/AddProduct/AddProduct";
-
-
+import Basket from "./pages/Basket/Basket";
 
 function App() {
   return (
@@ -24,6 +23,7 @@ function App() {
                 <Route path={'/catalog/:category'} element={<Catalog/>}/>
                 <Route path={'/product/:id'} element={<Product/>}/>
                 <Route path={'/product/add'} element={<AddProduct/>}/>
+                <Route path={'/basket'} element={<Basket/>}/>
 
             </Route>
             <Route path={'register'} element={<Register/>}/>

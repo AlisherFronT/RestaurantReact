@@ -69,7 +69,24 @@
     border-radius: 10px;
     height: 385px;
     transition: .5s all;
-
+    position: relative;
+  &-circle{
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    font-family: Gilroy, sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    color: #CFCFCF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -25px;
+    right: -25px;
+    background: #618967;
+  }
     &:hover {
       box-shadow: 0px 30px 45px rgba(43, 40, 40, 0.6);
     }

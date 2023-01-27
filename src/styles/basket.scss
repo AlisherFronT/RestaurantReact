@@ -1,0 +1,36 @@
+.basket{
+  padding: 40px 0 40px;
+  &__top{
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+  }
+  &__list{
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, #494544 0%, #504B4A 100%);
+    border-radius: 10px;
+  }
+  &__item{
+    padding: 20px 42px 20px 20px;
+    display: flex;
+    justify-content: space-between;
+    &-minus, &-plus, &-del{
+      width: 27px;
+      height: 27px;
+      background: #72A479;
+      border-radius: 50%;
+      border: none;
+      cursor: pointer;
+    }
+    &-right{
+      width: 50%;
+      display: flex;
+      justify-content: space-between;
+  }
+    &-count{
+      display: flex;
+      column-gap: 20px;
+    }
+  }
+}

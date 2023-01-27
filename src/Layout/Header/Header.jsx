@@ -1,15 +1,18 @@
-import React, {useContext} from 'react';
+import React, {useContext, useState} from 'react';
 
 import {BiMap, BiPhoneCall} from 'react-icons/bi'
 import {CiSearch} from 'react-icons/ci'
 import {Link, useNavigate} from "react-router-dom";
 import {CustomContext} from "../../utils/Context";
+import EmptyBasket from "../../components/EmptyBasket/EmptyBasket";
 
 const Header = () => {
 
-    const {user, setUser} = useContext(CustomContext)
+    const {user, setUser, basket} = useContext(CustomContext)
 
     const navigate = useNavigate()
+
+    const [show, setShow] = useState(false)
 
 
     const logOutUser = () => {
@@ -76,14 +79,24 @@ const Header = () => {
 
                     }
 
-                    <button className="header__btn">
+                    <button className="header__btn" onClick={() =>{
+
+                        if (basket.length) {
+                            navigate('/basket')
+                        } else {
+                            setShow(true)
+                        }
+
+                    }}>
                         Корзина
                         <span className="header__btn-count">
-                            4
+                            {basket.length}
                         </span>
                     </button>
                 </nav>
             </div>
+
+            <EmptyBasket show={show} setShow={setShow}/>
         </header>
     );
 };

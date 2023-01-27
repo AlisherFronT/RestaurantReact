@@ -2,7 +2,7 @@
   "products": [
     {
       "id": 1,
-      "image": "./assets/products/menu1.png",
+      "image": "../assets/products/menu1.png",
       "title": "Ягненок",
       "description": "Фаршированный гречневой кашей, курагой, апельсином и зеленым яблоком",
       "price": 620,
@@ -15,7 +15,7 @@
     },
     {
       "id": 2,
-      "image": "./assets/products/menu2.png",
+      "image": "../assets/products/menu2.png",
       "title": "Индейка",
       "description": "Фаршированный гречневой кашей, \nкурагой, апельсином и зеленым яблоком",
       "price": 450,
@@ -28,7 +28,7 @@
     },
     {
       "id": 3,
-      "image": "./assets/products/menu3.png",
+      "image": "../assets/products/menu3.png",
       "title": "Гусь",
       "description": "Фаршированный яблоками",
       "price": 7900,
@@ -41,7 +41,7 @@
     },
     {
       "id": 4,
-      "image": "./assets/products/menu4.png",
+      "image": "../assets/products/menu4.png",
       "title": "Утка",
       "description": "Фаршированная рисом, курагой и айвой",
       "price": 3230,
@@ -100,7 +100,7 @@
       "weight": 300,
       "protein": 20,
       "fats": 8,
-      "carbs": 30,
+      "carbohydrates": 30,
       "calories": 250,
       "category": "grill"
     },
@@ -113,7 +113,7 @@
       "weight": 250,
       "protein": 30,
       "fats": 6,
-      "carbs": 19,
+      "carbohydrates": 19,
       "calories": 300,
       "category": "fish"
     },
@@ -126,7 +126,7 @@
       "weight": 260,
       "protein": 22,
       "fats": 8,
-      "carbs": 21,
+      "carbohydrates": 21,
       "calories": 200,
       "category": "grill"
     },
@@ -139,7 +139,7 @@
       "weight": 330,
       "protein": 12,
       "fats": 38,
-      "carbs": 91,
+      "carbohydrates": 91,
       "calories": 320,
       "category": "soup"
     },
@@ -152,7 +152,7 @@
       "weight": 530,
       "protein": 92,
       "fats": 23,
-      "carbs": 66,
+      "carbohydrates": 66,
       "calories": 760,
       "category": "special"
     },
@@ -165,7 +165,7 @@
       "weight": 500,
       "protein": 52,
       "fats": 33,
-      "carbs": 16,
+      "carbohydrates": 16,
       "calories": 360,
       "category": "special"
     },
@@ -178,7 +178,7 @@
       "weight": 290,
       "protein": 22,
       "fats": 63,
-      "carbs": 96,
+      "carbohydrates": 96,
       "calories": 460,
       "category": "fish"
     },
@@ -191,23 +191,11 @@
       "weight": 690,
       "protein": 12,
       "fats": 53,
-      "carbs": 46,
+      "carbohydrates": 46,
       "calories": 430,
       "category": "drinks"
-    },
-    {
-      "title": "131",
-      "image": "123",
-      "description": "23",
-      "price": "0123123",
-      "weight": "0123123",
-      "protein": "0123123",
-      "fats": "0123213",
-      "carbohydrates": "0213",
-      "category": "cold",
-      "calories": 1602261,
-      "id": 16
     }
+
   ],
   "users": [
     {
